@@ -16,4 +16,3 @@ function call(data,target)
 }
 
 console.log(call(arr,2));
-console.log(call(arr,5));
