@@ -1,21 +1,9 @@
-function call(n)
+function add(arr,n)
 {
-    if(n.length == 0)
+    if(n == 0)
     {
-        return 0;
+        return 0
     }
-
-    function inner(i)
-    {
-        if(i == n.length-1)
-        {
-            return n[i];
-        }
-        return n[i] + inner(i+1);
-    }
-
-    console.log(inner(0));
-
+    return arr[n-1]+ add(arr,n-1)
 }
-
-call([3,6,4]);
+console.log(add([1,2,3,4,5],5));
