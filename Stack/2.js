@@ -10,8 +10,6 @@ function isBalance() {
             if(stack.pop() != obj[str[x]]){
                 return false
             }
-
-
         }
     }
     if (stack.length == 0) {
